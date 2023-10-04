@@ -16,6 +16,7 @@ Penelitian lain yang juga memberikan hasil positif dilakukan oleh Wang. pada tah
 
 ---
 *Referensi*:
+
 Adhikari, S., Pradhan, S., & Mishra, S. (2022). Gold price prediction using deep learning in India. arXiv preprint arXiv:2207.02257.
 
 Wang, Z., Wang, X., & Wang, J. (2022). Gold price prediction using ensemble learning in China. arXiv preprint arXiv:2207.02257.
