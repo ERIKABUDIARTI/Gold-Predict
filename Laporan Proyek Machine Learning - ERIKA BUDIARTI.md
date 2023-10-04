@@ -78,6 +78,7 @@ adalah tanggal yang menjadi patokan pengukuran harga emas.
 ![Statistic Dataset](https://raw.githubusercontent.com/ERIKABUDIARTI/Gold-Predict/main/statistic.png)
 
 **Melihat korelasi antar variable**
+
 ![Correlation](https://raw.githubusercontent.com/ERIKABUDIARTI/Gold-Predict/main/korelasi.png)
 
 **Menampilkan korelasi antar variable dengan heatmap**
