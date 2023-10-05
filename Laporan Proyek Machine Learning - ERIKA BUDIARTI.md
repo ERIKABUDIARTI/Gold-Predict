@@ -81,7 +81,7 @@ Berikut adalah beberapa informasi berharga yang dapat disediakan kepada investor
 *Klik link untuk download Dataset*:  
 https://www.kaggle.com/datasets/altruistdelhite04/gold-price-data
 
-**Gambaran Umum Dataset**:
+**Gambaran Umum Dataset**:     
 Berkas data ini berformat *Comma Separated Value (CSV)* dengan 2290 baris dan 6 kolom. Berkas ini berisi 5 kolom yang memiliki tipe data numerik, dan 1 kolom dengan tipe data tanggal. Dataset dengan jelas menampilkan nilai variabel-variabel SPX, GLD, USO, SLV, EUR/USD terhadap kolom tanggal.
 
 ### Variabel-variabel pada dataset adalah sebagai berikut:
@@ -126,7 +126,7 @@ Sebelum melakukan *modeling* dan *evaluation* dengan algoritma *Machine Learning
 Pada Tabel 1, kita dapat melihat 5 baris pertama dan 5 baris terakhir pada dataset yang belum dilakukan *preprocessing*.
 
 
-Tabel 2 : Deskripsi Statistik Dataset      
+         Tabel 2 : Deskripsi Statistik Dataset      
 | Desc  |   SPX   |   GLD   |   USO   |   SLV   | EUR/USD |
 |-------|---------|---------|---------|---------|---------|
 | count | 2290.00 | 2290.00 | 2290.00 | 2290.00 | 2290.00 |
@@ -141,7 +141,7 @@ Tabel 2 : Deskripsi Statistik Dataset
 Tabel 2 memberikan informasi mengenai statistik *dataset* yaitu *count*(jumlah data), *mean*(nilai rata-rata), *std*(standard deviasi), *min*(nilai terendah), *25%*(quartil 1), *50%*(median), *75%*(quartil 3) dan *max*(nilai tertinggi).
 
 
-Tabel 3 : Korelasi Antar Variabel       
+         Tabel 3 : Korelasi Antar Variabel       
 |         |   SPX   |   GLD   |   USO   |   SLV   | EUR/USD |
 |---------|---------|---------|---------|---------|---------|
 | SPX     |    1,00 |   0.05  |   -0.59 |  -0.27  |   -0.67 |
@@ -320,11 +320,13 @@ Perbandingan dari ketiga metrik:
 
 ### Memilih model yang terbaik berdasarkan metrik evaluasi
 
-Tabel 4 : Skor MAE, MSE dan R2 dengan parameter cv=5      
+            Tabel 4 : Skor MAE, MSE dan R2 dengan parameter cv=5      
 |                   | MAE *Train*| MAE *Test*|MSE *Train*|MSE *Test*|R2 *Train*|R2 *Test*|
 |-------------------|------------|-----------|-----------|----------|----------|---------|
 | Linear Regression |   8.343    |    8.018  |   132.806 |  126.818 |   0.683  |   0.691 | 
 | SVM Regressor     |  14.057    |   14.128  |   370.107 |  369.564 |   0.116  |   0.099 |
+
+Tabel 4 memberikan *summary* hasil evaluasi model *machine learning* dengan menggunakan metrik MAE, MSE dan R2. Skor metrik MAE dan MSE dengan algoritma *Linear Regression* lebih rendah daripada *SVM Regressor*, sedangkan metrik R2 dengan algoritma *SVM Regressor* lebih rendah daripada *Linear Regression*.
 
 **Kesimpulan**:
 1. **MAE (Mean Absolute Error)**:    
