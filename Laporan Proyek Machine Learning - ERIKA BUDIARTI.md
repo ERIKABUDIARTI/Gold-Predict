@@ -71,9 +71,9 @@ Berikut adalah beberapa informasi berharga yang dapat disediakan kepada investor
 
 ### Solution Statements
 
-1. Solusi pertama untuk meningkatkan akurasi dalam prediksi harga emas adalah dengan menggabungkan dua atau lebih algoritma Machine Learning yang berbeda. Tiap algoritma ML memiliki keunggulan dan kelemahan masing-masing, sehingga dengan mengkombinasikannya, kita dapat memanfaatkan keunggulan tiap algoritma untuk meningkatkan akurasi prediksi harga emas. Sebagai contoh, kita bisa memanfaatkan model *Linear Regression (LR)* untuk menangkap trend jangka panjang dalam data harga emas, atau menggunakan model *Support Vector Machine (SVM) Regressor* untuk melihat potensi fluktuasi jangka pendek.
+1. Solusi pertama untuk meningkatkan akurasi dalam prediksi harga emas adalah dengan menggabungkan dua atau lebih algoritma Machine Learning yang berbeda. Tiap algoritma ML memiliki keunggulan dan kelemahan masing-masing, sehingga dengan mengkombinasikannya, keunggulan tiap algoritma dapat dimanfaatkan untuk meningkatkan akurasi prediksi harga emas. Sebagai contoh, model *Linear Regression (LR)* dimanfaatkan untuk menangkap trend jangka panjang dalam data harga emas, atau menggunakan model *Support Vector Machine (SVM) Regressor* untuk melihat potensi fluktuasi jangka pendek.
 
-2. Solusi kedua adalah melakukan perbaikan pada model dasar (*baseline*) dengan melakukan *tuning* terhadap *hyperparameter*-nya. Model dasar seringkali merupakan model yang sederhana dan belum dioptimalkan, sehingga akurasinya biasanya rendah. Dengan melakukan tuning pada hyperparameter, kita bisa mencari nilai-nilai yang optimal untuk meningkatkan akurasi model. *Hyperparameter* adalah parameter-parameter yang tidak dapat diajarkan oleh model ML dan perlu ditentukan secara manual. Melalui proses tuning ini, kita dapat mengidentifikasi kombinasi *hyperparameter* terbaik yang dapat menghasilkan prediksi harga emas yang lebih akurat dan efektif.
+2. Solusi kedua adalah melakukan perbaikan pada model dasar (*baseline*) dengan melakukan *tuning* terhadap *hyperparameter*-nya. Model dasar seringkali merupakan model yang sederhana dan belum dioptimalkan, sehingga akurasinya biasanya rendah. Dengan melakukan tuning pada hyperparameter, nilai-nilai yang optimal dapat dicari untuk meningkatkan akurasi model. *Hyperparameter* adalah parameter-parameter yang tidak dapat diajarkan oleh model ML dan perlu ditentukan secara manual. Melalui proses tuning ini, identifikasi kombinasi *hyperparameter* yang terbaik dapat digunakan untuk menghasilkan prediksi harga emas yang lebih akurat dan efektif.
 
 
 ## Data Understanding
@@ -105,7 +105,7 @@ adalah tanggal yang menjadi patokan pengukuran harga emas. Tanggal ditulis dalam
 
 ### Melihat sekilas pada dataset
 
-Sebelum melakukan *modeling* dan *evaluation* dengan algoritma *Machine Learning* pada Notebook "Google Colaboratory", mari kita melihat sekilas pada *dataset* yang digunakan. Di bawah ini akan ditampilkan cuplikan dari dataset, deskripsi statistik dan korelasi antar variabel beserta penjelasannya.
+Sebelum melakukan *modeling* dan *evaluation* dengan algoritma *Machine Learning* pada Notebook "Google Colaboratory", mari melihat sekilas pada *dataset* yang digunakan. Di bawah ini akan ditampilkan cuplikan dari dataset, deskripsi statistik dan korelasi antar variabel beserta penjelasannya.
 
 
 Tabel 1 : Cuplikan Dataset   
@@ -123,7 +123,7 @@ Tabel 1 : Cuplikan Dataset
 |  2288 | 5/14/2018 | 2730.13 |  124.49 | 14.38 | 15.56 |  1.19   |
 |  2289 | 5/16/2018 | 2725.78 |  122.54 | 14.41 | 15.45 |  1.18   |
 
-Pada Tabel 1, kita dapat melihat 5 baris pertama dan 5 baris terakhir pada dataset yang belum dilakukan *preprocessing*.
+Tabel 1 menyajikan 5 baris pertama dan 5 baris terakhir pada dataset yang belum dilakukan *preprocessing*.
 
 
 Tabel 2 : Deskripsi Statistik Dataset      
@@ -150,7 +150,7 @@ Tabel 3 : Korelasi Antar Variabel
 | SLV     |   -0.27 |   0.87  |    0.17 |   1.00  |    0.32 |
 | EUR/USD |   -0.67 |  -0.02  |    0.83 |   0.32  |    1.00 | 
 
-Mari kita analisis korelasi antar variabel dalam dataset seperti yang ditampilkan tabel 3:
+Berikut adalah analisis korelasi antar variabel dalam dataset seperti yang ditampilkan tabel 3:
 1. SPX (*S&P 500 Index*) dengan Variabel Lainnya:
     * Korelasi antara SPX dan GLD adalah 0.05, yang menunjukkan hubungan yang sangat lemah atau bahkan tidak ada hubungan antara S&P 500 Index dan harga emas (GLD). Pergerakan harga emas tidak secara signifikan dipengaruhi oleh pergerakan pasar saham. 
     * Korelasi antara SPX dan USO adalah -0.59, yang menunjukkan hubungan negatif yang cukup kuat antara S&P 500 Index dan harga minyak (USO). Ini berarti ketika S&P 500 Index naik, harga minyak cenderung turun, dan sebaliknya ketika pasar saham (SPX) turun, harga minyak (USO) cenderung naik.
@@ -204,7 +204,7 @@ Pada grafik 1, korelasi antar variabel divisualisasikan dengan gradasi warna yan
     * Proses: data dibagi secara acak menjadi dua bagian, misalnya 70% untuk pelatihan dan 30% untuk pengujian atau 80% untuk pelatihan dan 20% untuk pengujian. Pembagian data ini penting untuk menghindari *overfitting* (model yang terlalu cocok dengan data pelatihan) dan memastikan evaluasi yang obyektif.
 
 6. **Normalisasi data**:   
-    * Normalisasi data diperlukan ketika berbagai fitur (kolom) dalam dataset memiliki skala yang berbeda yang bisa mempengaruhi kinerja beberapa algoritma *machine learning*. Normalisasi data mengubah skala fitur-fitur sehingga nilai-nilai mereka berada dalam rentang yang serupa. Ini penting karena banyak algoritma *machine learning*, seperti *linear regression* atau *k-means clustering*, sangat sensitif terhadap skala data. Tanpa normalisasi, variabel dengan skala besar dapat mendominasi hasil analisis, sementara variabel dengan skala kecil mungkin diabaikan. Dengan normalisasi, kita memastikan bahwa semua variabel memiliki kontribusi yang setara dalam analisis, sehingga hasilnya lebih andal dan akurat. 
+    * Normalisasi data diperlukan ketika berbagai fitur (kolom) dalam dataset memiliki skala yang berbeda yang bisa mempengaruhi kinerja beberapa algoritma *machine learning*. Normalisasi data mengubah skala fitur-fitur sehingga nilai-nilai mereka berada dalam rentang yang serupa. Ini penting karena banyak algoritma *machine learning*, seperti *linear regression* atau *k-means clustering*, sangat sensitif terhadap skala data. Tanpa normalisasi, variabel dengan skala besar dapat mendominasi hasil analisis, sementara variabel dengan skala kecil mungkin diabaikan. Dengan normalisasi, dapat dipastikan bahwa semua variabel memiliki kontribusi yang setara dalam analisis, sehingga hasilnya lebih andal dan akurat. 
     * Proses: Normalisasi melibatkan proses mengubah skala data. Metode yang umum digunakan termasuk *Min-Max Scaling*, *Standard Scaling*, *Z-Score Scaling*, atau menggunakan teknik seperti PCA (*Principal Component Analysis*) jika diperlukan.
 
 
