@@ -122,6 +122,7 @@ Sebelum melakukan *modeling* dan *evaluation* dengan algoritma *Machine Learning
 |  2287 | 5/10/2018 | 2723.07 |  125.18 | 14.41 | 15.74 |  1.19   |
 |  2288 | 5/14/2018 | 2730.13 |  124.49 | 14.38 | 15.56 |  1.19   |
 |  2289 | 5/16/2018 | 2725.78 |  122.54 | 14.41 | 15.45 |  1.18   |
+
 Pada Tabel 1, kita dapat melihat 5 baris pertama dan 5 baris terakhir pada dataset yang belum dilakukan *preprocessing*.
 
 
@@ -136,6 +137,7 @@ Tabel 2 : Deskripsi Statistik Dataset
 |  50%  | 1551.43 |  120.58 |   33.87 |   17.27 |    1.30 |
 |  75%  | 2073.01 |  132.84 |   37.83 |   22.88 |    1.37 |
 |  max  | 2872.87 |  184.59 |  117.48 |   47.26 |    1.60 | 
+
 Tabel 2 memberikan informasi mengenai statistik *dataset* yaitu *count*(jumlah data), *mean*(nilai rata-rata), *std*(standard deviasi), *min*(nilai terendah), *25%*(quartil 1), *50%*(median), *75%*(quartil 3) dan *max*(nilai tertinggi).
 
 
