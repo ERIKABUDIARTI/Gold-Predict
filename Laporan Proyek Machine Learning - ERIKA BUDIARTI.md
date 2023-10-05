@@ -6,7 +6,7 @@
 
 Nama *Project* : **Gold Price Prediction**
 
-**Latar Belakang**:
+**Latar Belakang**:      
 Harga emas merupakan salah satu aset investasi yang terkenal di seluruh dunia. Nilai dari emas sangat dipengaruhi oleh berbagai faktor, seperti inflasi, tingkat suku bunga, kondisi ekonomi global, dan tingkat permintaan terhadap logam mulia tersebut. Kemampuan harga emas untuk berfluktuasi dengan cepat telah menjadi tantangan bagi para investor yang berusaha memproyeksikan bagaimana harga emas akan bergerak di masa mendatang.
 Pendekatan menggunakan teknologi *Machine Learning (ML)* muncul sebagai solusi yang potensial untuk memprediksi pergerakan harga emas di masa depan. Dalam konteks ini, ML dapat digunakan untuk menganalisis dan memahami pola-pola yang ada dalam data historis harga emas. Dengan memanfaatkan pembelajaran dari data masa lalu, ML dapat memberikan perkiraan tentang bagaimana harga emas mungkin akan berubah di masa depan.
 
@@ -26,7 +26,7 @@ Dataset ini menggunakan informasi harga emas dari tahun 2009-2018 dengan rata-ra
 | 2017 | 119.55|    
 | 2018 | 126.02|    
 
-**Penelitian Terkait**:
+**Penelitian Terkait**:      
 Anisa Aulia : 
 "Emas adalah logam mulia yang sangat diminati, karena secara umum nilai emas cenderung stabil dan harganya per gram akan meningkat setiap tahun. Investasi emas terbagi menjadi dua, yaitu investasi digital dan investasi fisik. Terkadang dalam investasi emas ini investor akan mengalami kerugian serta mendapatkan keuntungan. Untuk meminimalisir hal tersebut, dibutuhkan teknik untuk memprediksi harga emas. Teknik prediksi merupakan salah satu teknik yang digunakan dalam Machine Learning. Penelitian ini bertujuan untuk memprediksi harga emas menggunakan algoritma *Support Vector Regression (SVR)* dan *Linear Regression (LR)* sebagai perbandingan." [1]
 
