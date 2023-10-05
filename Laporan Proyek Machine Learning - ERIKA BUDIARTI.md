@@ -108,7 +108,7 @@ adalah tanggal yang menjadi patokan pengukuran harga emas. Tanggal ditulis dalam
 Sebelum melakukan *modeling* dan *evaluation* dengan algoritma *Machine Learning* pada Notebook "Google Colaboratory", mari kita melihat sekilas pada *dataset* yang digunakan. Di bawah ini akan ditampilkan cuplikan dari dataset, deskripsi statistik dan korelasi antar variabel beserta penjelasannya.
 
 
-Tabel 1 : Cuplikan Dataset   
+                  Tabel 1 : Cuplikan Dataset   
 |Index  |    Date   |   SPX   |   GLD   |  USO  |  SLV  | EUR/USD |
 |-------|-----------|---------|---------|-------|-------|---------|
 |  0    |  1/2/2008 | 1447.16 |   84.86 | 78.47 | 15.18 |  1.47   |
@@ -122,6 +122,8 @@ Tabel 1 : Cuplikan Dataset
 |  2287 | 5/10/2018 | 2723.07 |  125.18 | 14.41 | 15.74 |  1.19   |
 |  2288 | 5/14/2018 | 2730.13 |  124.49 | 14.38 | 15.56 |  1.19   |
 |  2289 | 5/16/2018 | 2725.78 |  122.54 | 14.41 | 15.45 |  1.18   |
+Pada Tabel 1, kita dapat melihat 5 baris pertama dan 5 baris terakhir pada dataset yang belum dilakukan *preprocessing*.
+
 
 Tabel 2 : Deskripsi Statistik Dataset      
 | Desc  |   SPX   |   GLD   |   USO   |   SLV   | EUR/USD |
@@ -134,6 +136,8 @@ Tabel 2 : Deskripsi Statistik Dataset
 |  50%  | 1551.43 |  120.58 |   33.87 |   17.27 |    1.30 |
 |  75%  | 2073.01 |  132.84 |   37.83 |   22.88 |    1.37 |
 |  max  | 2872.87 |  184.59 |  117.48 |   47.26 |    1.60 | 
+Tabel 2 memberikan informasi mengenai statistik *dataset* yaitu *count*(jumlah data), *mean*(nilai rata-rata), *std*(standard deviasi), *min*(nilai terendah), *25%*(quartil 1), *50%*(median), *75%*(quartil 3) dan *max*(nilai tertinggi).
+
 
 Tabel 3 : Korelasi Antar Variabel       
 |         |   SPX   |   GLD   |   USO   |   SLV   | EUR/USD |
@@ -144,7 +148,7 @@ Tabel 3 : Korelasi Antar Variabel
 | SLV     |   -0.27 |   0.87  |    0.17 |   1.00  |    0.32 |
 | EUR/USD |   -0.67 |  -0.02  |    0.83 |   0.32  |    1.00 | 
 
-Mari kita analisis korelasi antar variabel dalam dataset:
+Mari kita analisis korelasi antar variabel dalam dataset seperti yang ditampilkan tabel 3:
 1. SPX (*S&P 500 Index*) dengan Variabel Lainnya:
     * Korelasi antara SPX dan GLD adalah 0.05, yang menunjukkan hubungan yang sangat lemah atau bahkan tidak ada hubungan antara S&P 500 Index dan harga emas (GLD). Pergerakan harga emas tidak secara signifikan dipengaruhi oleh pergerakan pasar saham. 
     * Korelasi antara SPX dan USO adalah -0.59, yang menunjukkan hubungan negatif yang cukup kuat antara S&P 500 Index dan harga minyak (USO). Ini berarti ketika S&P 500 Index naik, harga minyak cenderung turun, dan sebaliknya ketika pasar saham (SPX) turun, harga minyak (USO) cenderung naik.
@@ -168,9 +172,11 @@ Penjelasan di atas dapat memberikan pemahaman yang lebih baik tentang data. Misa
 Grafik 1 : Menampilkan korelasi antar variabel dengan heatmap
 ![Heatmap](https://raw.githubusercontent.com/ERIKABUDIARTI/Gold-Predict/main/heatmap.png)
 
-
 Grafik 2 : Menampilkan pola korelasi antar variabel dengan pairplot
 ![Pairplot](https://raw.githubusercontent.com/ERIKABUDIARTI/Gold-Predict/main/pair%20plot.png)
+
+Pada grafik 1, korelasi antar variabel divisualisasikan dengan gradasi warna yang berbeda dalam bentuk heatmap, sedangkan Grafik 2 memvisualisasikan pola korelasi dari semua variabel numerikal dengan pairplot.
+
 
 ## Data Preparation
 
