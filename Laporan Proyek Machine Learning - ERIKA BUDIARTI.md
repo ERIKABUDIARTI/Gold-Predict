@@ -184,11 +184,11 @@ Pada grafik 1, korelasi antar variabel divisualisasikan dengan gradasi warna yan
 
 **Tahapan dalam Persiapan Data**
 1. **Impor library dan dataset**:   
-    * Tahapan ini penting karena kita perlu memuat *library Python* dan *dataset* ke dalam *environment* (seperti Jupyter Notebook atau IDE lainnya) sebelum memulai analisis data.
+    * Tahapan ini penting karena *library Python* dan *dataset* perlu dimuat ke dalam *environment* (seperti Jupyter Notebook atau IDE lainnya) sebelum memulai analisis data.
     * Proses: impor *library Python* seperti *pandas*, *numpy*, dan lainnya yang dibutuhkan untuk mengolah data, kemudian impor *dataset* dari sumbernya (misalnya, *file CSV*, *file XLS*, atau *database*) ke *environment*.
 
 2. **Pemeriksaan data**:   
-    * Pemeriksaan data membantu kita untuk memahami dataset, mengidentifikasi masalah awal, dan memastikan kualitas data.
+    * Pemeriksaan data diperlukan untuk memahami dataset, mengidentifikasi masalah awal, dan memastikan kualitas data.
     * Proses: melihat struktur data, menampilkan beberapa sampel data, memeriksa tipe data kolom, mengidentifikasi nilai yang hilang, dan melakukan analisis statistik deskriptif.
 
 3. **Eksplorasi data**:
@@ -231,7 +231,7 @@ Pada grafik 1, korelasi antar variabel divisualisasikan dengan gradasi warna yan
     Parameter ini menentukan apakah model harus memperhitungkan intercept (bias) dalam persamaan regresi. Nilai *default* adalah *True*, yang berarti intercept akan dihitung.
 
 3. *'n_jobs'*
-    Ini adalah parameter yang mengontrol jumlah pekerjaan paralel yang digunakan dalam pelatihan model. Nilai *default* adalah *None* berarti hanya satu pekerjaan yang digunakan. Jika kita ingin menggunakan paralelisasi, dapat mengatur nilai ini ke jumlah inti *CPU* yang ingin Anda gunakan.
+    Ini adalah parameter yang mengontrol jumlah pekerjaan paralel yang digunakan dalam pelatihan model. Nilai *default* adalah *None* berarti hanya satu pekerjaan yang digunakan. Jika ingin menggunakan paralelisasi, dapat mengatur nilai ini ke jumlah inti *CPU* yang ingin Anda gunakan.
 
 4. *'positive'*
     Parameter ini mengatur apakah model harus memastikan bahwa koefisien regresi yang dihasilkan harus bernilai positif. Nilai *default* adalah *False*, yang berarti model tidak membatasi koefisien menjadi positif.
