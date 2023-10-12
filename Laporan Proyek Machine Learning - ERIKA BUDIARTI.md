@@ -27,7 +27,7 @@ Dataset ini menggunakan informasi harga emas dari tahun 2009-2018 dengan rata-ra
 | 2018 | 126.02|    
 
 **Penelitian Terkait**:      
-Anisa Aulia : 
+-Anisa Aulia- : 
 "Emas adalah logam mulia yang sangat diminati, karena secara umum nilai emas cenderung stabil dan harganya per gram akan meningkat setiap tahun. Investasi emas terbagi menjadi dua, yaitu investasi digital dan investasi fisik. Terkadang dalam investasi emas ini investor akan mengalami kerugian serta mendapatkan keuntungan. Untuk meminimalisir hal tersebut, dibutuhkan teknik untuk memprediksi harga emas. Teknik prediksi merupakan salah satu teknik yang digunakan dalam Machine Learning. Penelitian ini bertujuan untuk memprediksi harga emas menggunakan algoritma *Support Vector Regression (SVR)* dan *Linear Regression (LR)* sebagai perbandingan." [1]
 
 
